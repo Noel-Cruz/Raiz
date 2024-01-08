@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom"
 const Categorias = () => {
   return (
-    <ul>
+    <div>
+      <ul>
         <li>
-        CATEGORÍAS
+          CATEGORÍAS
         </li>
         <li>
           <NavLink to='categoria/1'>
@@ -20,7 +21,8 @@ const Categorias = () => {
             Monitores
           </NavLink>
         </li>
-    </ul>
+      </ul>
+    </div>
   )
 }
 

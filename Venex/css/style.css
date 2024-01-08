@@ -101,14 +101,21 @@ body #root header nav ul li:nth-child(3) a div::before {
   left: 1.6rem;
 }
 
-body #root header > ul {
-  font-family: "Montserrat", sans-serif;
+body #root header > div {
   background-color: #e7e7e7;
-  padding-inline: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+body #root header > div ul {
+  flex-basis: 83rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: #929292;
+  padding-inline: 0;
   display: flex;
 }
 
-body #root header > ul > :nth-child(1) {
+body #root header > div > ul > :nth-child(1) {
   letter-spacing: 0.5px;
   font-weight: bold;
   padding: 0.3rem 0 0.3rem 0.9rem;
@@ -116,7 +123,7 @@ body #root header > ul > :nth-child(1) {
   align-items: center;
 }
 
-body #root header > ul > :nth-child(1)::after {
+body #root header > div ul > :nth-child(1)::after {
   display: block;
   content: "";
   width: 2px;
@@ -125,7 +132,7 @@ body #root header > ul > :nth-child(1)::after {
   margin-left: 0.6rem;
 }
 
-body #root header > ul li a {
+body #root header > div ul li a {
   color: black;
   padding: 0.9rem 1rem;
   display: flex;
